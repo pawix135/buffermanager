@@ -1,0 +1,9 @@
+{
+  "name": "@pawix/buffermanager",
+  "description": "Deno ArrayBuffer helper class",
+  "version": "1.0.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "test": "deno test"
+  }
+}
