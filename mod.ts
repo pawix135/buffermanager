@@ -1,7 +1,3 @@
-/**
- * BufferManager keeps track of the buffer and the read/write offsets.
- * @module
- */
 export const INT8_SIZE: number = 1;
 export const INT16_SIZE: number = 2;
 export const INT32_SIZE: number = 4;
