@@ -1,23 +1,37 @@
+/** Size of an 8-bit integer in bytes */
 export const INT8_SIZE: number = 1;
+/** Size of a 16-bit integer in bytes */
 export const INT16_SIZE: number = 2;
+/** Size of a 32-bit integer in bytes */
 export const INT32_SIZE: number = 4;
-export const Uint8_SIZE: number = 1;
-export const Uint16_SIZE: number = 2;
-export const Uint32_SIZE: number = 4;
+/** Size of an 8-bit unsigned integer in bytes */
+export const UINT8_SIZE: number = 1;
+/** Size of a 16-bit unsigned integer in bytes */
+export const UINT16_SIZE: number = 2;
+/** Size of a 32-bit unsigned integer in bytes */
+export const UINT32_SIZE: number = 4;
+/** Size of a 32-bit floating point number in bytes */
 export const FLOAT32_SIZE: number = 4;
+/** Size of a 64-bit floating point number in bytes */
 export const FLOAT64_SIZE: number = 8;
+/** Size of a 64-bit big integer in bytes */
 export const BIGINT64_SIZE: number = 8;
+/** Size of a 64-bit unsigned big integer in bytes */
 export const BIGUint64_SIZE: number = 8;
 
 /** BufferManager class */
 export class BufferManager {
+  /** The offset for writing to buffer */
   writeOffset: number;
+  /** The offset for reading from buffer */
   readOffset: number;
+  /** The buffer */
   buffer: ArrayBuffer;
+  /** The DataView */
   view: DataView;
 
   /**
-   *
+   * Create a new BufferManager
    * @param length - The length of the buffer
    */
   constructor(length: number) {

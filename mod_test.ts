@@ -7,11 +7,11 @@ import {
   INT8_SIZE,
   INT16_SIZE,
   INT32_SIZE,
-  Uint8_SIZE,
+  UINT8_SIZE,
   BIGINT64_SIZE,
   BIGUint64_SIZE,
-  Uint32_SIZE,
-  Uint16_SIZE,
+  UINT32_SIZE,
+  UINT16_SIZE,
 } from "./mod.ts";
 
 describe("ABView", () => {
@@ -40,21 +40,21 @@ describe("ABView", () => {
   });
 
   it("should write and read Uint8 number", () => {
-    const buffer = new BufferManager(Uint8_SIZE);
+    const buffer = new BufferManager(UINT8_SIZE);
     buffer.writeUint8(55);
     const number = buffer.readUint8();
     assertEquals(number, 55);
   });
 
   it("should wrint and read Uint16 number", () => {
-    const buffer = new BufferManager(Uint16_SIZE);
+    const buffer = new BufferManager(UINT16_SIZE);
     buffer.writeUint16(65535);
     const number = buffer.readUint16();
     assertEquals(number, 65535);
   });
 
   it("should write and read Uint32 number", () => {
-    const buffer = new BufferManager(Uint32_SIZE);
+    const buffer = new BufferManager(UINT32_SIZE);
     buffer.writeUint32(4294967295);
     const number = buffer.readUint32();
     assertEquals(number, 4294967295);
